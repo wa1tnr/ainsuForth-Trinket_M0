@@ -1,3 +1,7 @@
+// Sat Dec  2 20:50:31 UTC 2017
+// 4735-b0d-00a-   the -00x- is new Dec 2, 2017 on the Trinket M0 branch
+
+// previous timestamp (CPX branch):
 // Sat Jul 29 18:14:02 UTC 2017
 // 4735-b0b-01-
 
@@ -198,7 +202,7 @@ void setup(void) {
   pHere = &forthSpace[0];
   pOldHere = pHere;
   
-  Serial.print("\n warm boot message - early bird.  //  Gemma M0 29 Jul 2017\r\n          type 'warm' to reboot"); // instant confirmation
+  Serial.print("\n warm boot message - early bird.  //  Trinket M0 02 Dec 2017\r\n          type 'warm' to reboot"); // instant confirmation
 
   delay(9 * 100); // 900 ms - optional - useful when coded for a 4+ second delay
                   // to give the operator time to task switch from upload
