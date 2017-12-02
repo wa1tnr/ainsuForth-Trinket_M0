@@ -5,8 +5,15 @@
 
 #define NUMPIXELS 1 // Number of LEDs in strip
 
-#define DATAPIN    3
-#define CLOCKPIN   4
+// On the Trinket M0 schematic, physical pins 1 and 2 of the SAMD21E18,
+// giving perhaps PA00 and PA01.  Spoken for elsewhere:
+
+// D1 D4 D3 D0 D2
+// A0 A2 A3 A4 A1
+
+// This leaves perhaps D5 D6 as likely.  Look for this.
+#define DATAPIN    3 // Gemma M0
+#define CLOCKPIN   4 // Gemma M0
 
 Adafruit_DotStar strip = Adafruit_DotStar(
   NUMPIXELS, DATAPIN, CLOCKPIN, DOTSTAR_BRG);
