@@ -1,3 +1,14 @@
+// Sat Dec  2 20:50:31 UTC 2017
+// 4735-b0d-00a-   the -00x- is new Dec 2, 2017 on the Trinket M0 branch
+
+// NOTE - the SPI flash variant does not apply to Trinket M0 
+// watch for getline.cpp corruption when mass-copying from one target to another.
+
+// On the same token the remove word is specific to SPI-flashROM
+// equipped targets (Feather M0 Express, Metro M0 Express &c.)
+
+// previous timestamp (CPX branch):
+
 // Tue Jun 27 01:07:58 UTC 2017
 // 4735-a0r-06-
 
