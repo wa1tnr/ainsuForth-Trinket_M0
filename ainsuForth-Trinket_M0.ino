@@ -1,5 +1,14 @@
+// Sat Dec  2 20:50:31 UTC 2017
+// 4735-b0d-00a-   the -00x- is new Dec 2, 2017 on the Trinket M0 branch
+
+// previous timestampe (CPX branch):
+// Sat Nov 25 19:03:16 UTC 2017
+// 4735-b0c-09d-   the -09x- is new Nov 24, 2017.
+
 // Sat Jul 29 18:14:02 UTC 2017
 // 4735-b0b-01-
+
+// KERADO       AEFUUE
 
 // MICHANDULO   KANLFEGR  CELLRAUGH  FELDSPAR  CHABULMU
 
