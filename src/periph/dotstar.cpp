@@ -17,8 +17,27 @@
 // A0 A2 A3 A4 A1
 
 // This leaves perhaps D5 D6 as likely.  Look for this.
+
+// No, rather:
+// [ https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/pinouts ]
+
+// Digital #7 - You can't see this pin but it is connected to the internal RGB DotStar data in pin
+// Digital #8 - You can't see this pin but it is connected to the internal RGB DotStar clock in pin
+
+#undef GEMMA_LOCAL_C3BN
+
+// #undef TRINKET_LOCAL_B4ED
+#define TRINKET_LOCAL_B4ED
+
+#ifdef TRINKET_LOCAL_B4ED
+#define DATAPIN    7 // Trinket M0
+#define CLOCKPIN   8 // Trinket M0
+#endif
+
+#ifdef GEMMA_LOCAL_C3BN
 #define DATAPIN    3 // Gemma M0
 #define CLOCKPIN   4 // Gemma M0
+#endif
 
 Adafruit_DotStar strip = Adafruit_DotStar(
   NUMPIXELS, DATAPIN, CLOCKPIN, DOTSTAR_BRG);
