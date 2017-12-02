@@ -30,8 +30,8 @@
 #define TRINKET_LOCAL_B4ED
 
 #ifdef TRINKET_LOCAL_B4ED
-#define DATAPIN    7 // Trinket M0
-#define CLOCKPIN   8 // Trinket M0
+#define DATAPIN    7 // Trinket M0  - tested as working correctly 02 Dec 2017
+#define CLOCKPIN   8 // Trinket M0  - tested as working correctly 02 Dec 2017
 #endif
 
 #ifdef GEMMA_LOCAL_C3BN
