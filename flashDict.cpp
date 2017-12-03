@@ -1,5 +1,17 @@
-// Sat Jul 29 18:14:02 UTC 2017
-// 4735-b0b-01-
+// Sat Dec  2 20:50:31 UTC 2017
+// 4735-b0d-00a-   the -00x- is new Dec 2, 2017 on the Trinket M0 branch
+
+// previous timestamp (CPX branch):
+
+// Sat Nov 25 19:03:16 UTC 2017
+// 4735-b0c-09d-   the -09x- is new Nov 24, 2017.
+
+// the accept word
+
+// Fri Nov 24 23:31:39 UTC 2017
+// 4735-b0c-09b-   the -09x- is new Nov 24, 2017.
+// Thu Aug  3 01:46:56 UTC 2017
+// 4735-b0d-00-
 
 #include <Arduino.h>
 #include "yaffa.h"
@@ -125,7 +137,9 @@ const flashEntry_t flashDict[] = {
   { fetch_str,          _fetch,           NORMAL },
 //   { abort_quote_str,    _abort_quote,     IMMEDIATE + COMP_ONLY },
   { abs_str,            _abs,             NORMAL },
-//   { accept_str,         _accept,          NORMAL },
+#ifdef EXT_KERN_ACCEPT
+  { accept_str,         _accept,          NORMAL },
+#endif
 //   { align_str,          _align,           NORMAL },
 //   { aligned_str,        _aligned,         NORMAL },
   { allot_str,          _allot,           NORMAL },

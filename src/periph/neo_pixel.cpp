@@ -33,10 +33,12 @@
 // Which pin on the Arduino is connected to the NeoPixels?
 // #define PIN               40 // peculiar to Metro M0 Express.  Feather M0 Express: PIN 8
 // #define PIN             8 // peculiar to Feather M0 Express.  Metro M0 Express: PIN 40
-#define PIN             8 // circuit playground Express
+// #define PIN             8 // circuit playground Express
+#define PIN             1 // selected on Trinket M0 due to lack of conflicts with i2c and SPI bus
 
 // How many NeoPixels are attached to the Arduino?
-#define NUMPIXELS      10 // circuit playground Express
+// #define NUMPIXELS      10 // circuit playground Express
+#define NUMPIXELS       8 // NeoPixel strip 8x
 // #define NUMPIXELS      1 // other Adafruit SAMD21 boards
 
 // When we setup the NeoPixel library, we tell it how many pixels,

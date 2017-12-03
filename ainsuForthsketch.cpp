@@ -175,6 +175,7 @@ void setup(void) {
   uint16_t mem;
 #ifdef HAS_NEO_PIXEL_LIB
   setup_neoPixel();
+  Serial.println("NeoPixel Lib is setup in ainsuforthsketch line 178.");
 #endif
 
 #ifdef HAS_DOTSTAR_LIB
